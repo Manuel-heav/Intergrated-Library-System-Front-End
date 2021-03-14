@@ -1,0 +1,17 @@
+@keyframes slide-right{
+    0%{
+        transform: translate(-550px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+@keyframes slide-left{
+    0%{
+        transform: translate(550px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}

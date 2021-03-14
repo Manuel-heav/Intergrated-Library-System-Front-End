@@ -1,0 +1,31 @@
+.book-section{
+    min-height: 650px;
+    background: #fff;
+}
+.book-section-content-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+.book-img{
+    width: 200px;
+    margin-top: 50px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px var(--primaryColor) solid;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.book-img:hover{
+    border: 5px coral solid;
+    width: 198px;
+    height: 198px;
+}
+
+.book-section-text{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}

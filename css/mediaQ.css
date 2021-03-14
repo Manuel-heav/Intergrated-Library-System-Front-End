@@ -1,0 +1,59 @@
+/* Header */
+@media only screen and (max-width: 768px){
+    .header ul{
+        background-color: transparent;
+    }  
+    .header li a {
+    padding: 30px;
+    border-bottom: 1px solid grey;
+  }
+}
+ 
+@media only screen and (min-width: 768px) {
+    .menu-wrapper{
+        background: var(--primaryColor);
+        height: 75px;
+        line-height: 55px;
+        border-bottom: 1px solid grey;
+        width: 100%;
+    }
+    .header ul{
+        margin: 10px;
+    }
+    .header li {
+        float: left;
+    }
+    .header .logo {
+        line-height: 1;
+        margin: 10px;
+        font-size: 30px;
+    }
+  .header li a {
+    color: #fff;
+    font-size: 19px;
+    padding: 0px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+
+}
+
+
+/* Footer and book-section */
+@media only screen and (max-width: 680px){
+  .footer{
+    grid-template-columns: 1fr;
+  }
+  .column{
+    margin-bottom: 30px;
+  }
+  .book-section-content-container{
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,42 @@
+.footer{
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 13px;
+    animation: slide-left 3s ease ;
+}
+
+.footer-text{
+    cursor: pointer;
+    transition: .6s;
+}
+
+.footer-text:hover{
+    opacity: .5;
+}
+
+.footer .icon{
+    font-size: 25px;
+    margin-bottom: 20px;;
+    transition: .6s;
+    cursor: pointer;
+}
+
+.footer .gps:hover{
+    color: red;
+}
+
+.footer .facebook:hover{
+    color: blue;
+}
+
+.footer .mail:hover{
+    color: grey;
+}
+
+.footer .phone:hover{
+    color: green;
+}

@@ -1,0 +1,103 @@
+.header {
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: relative;
+    width: 100%;
+    z-index: 3;
+  }
+   
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+  }
+  .header li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s;
+  }
+   
+  .header li a:hover{
+    color: grey
+  }
+
+  .header .logo {
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: 1.5em;
+    padding: 12px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .3s ease-out;
+  }
+   
+  /* menu icon */
+   
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 30px;
+    position: relative;
+  }
+   
+  .header .menu-icon .navicon {
+    background: #fff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+   
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #fff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+   
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+   
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+   
+  /* menu btn */
+   
+  .header .menu-btn {
+    display: none;
+  }
+   
+  .header .menu-btn:checked ~ .menu {
+    max-height: 340px;
+  }
+   
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+   
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+   
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+   
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }

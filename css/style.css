@@ -1,0 +1,22 @@
+:root{
+    --primaryColor: #202728;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Roboto";
+    line-height: 1.6;
+    background: var(--primaryColor);
+}
+
+
+
+
+  
