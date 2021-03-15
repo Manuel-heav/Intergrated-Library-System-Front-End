@@ -40,3 +40,18 @@
 .footer .phone:hover{
     color: green;
 }
+
+.bottom-footer-text{
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+}
+
+.footer-link{
+    color: #fff;
+    text-decoration: none;
+    transition: .7s;
+}
+.footer-link:hover{
+    opacity: .6;
+}

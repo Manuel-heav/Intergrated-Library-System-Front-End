@@ -1,29 +1,30 @@
-.reserve-section, .donation-section{
+.donation-section{
     min-height: 550px;
     background-color: #fff;
     color: black;
 }
+.reserve-section{
+  min-height: 550px;
+  background-color: var(--primaryColor);
+  color: #fff;
+}
 .signup-content{
   margin-left: 20%;
 }
-figure {
-    margin: 0; }
-  
-  .book-reservation-header,.book-donation-header {
+   .book-reservation-header,.book-donation-header {
     font-size: 30px;
     margin-top: 30px;
-    text-align: center;
     text-transform: uppercase;
     margin-bottom: 32px; 
 }
   
 .register-form {
-    padding: 50px 100px 50px 70px; 
+    padding: 50px; 
 }
 
     .form-row .form-group {
       width: 50%;
-      padding: 0 15px; }
+}
   
   .form-group {
     margin-bottom: 23px;
@@ -63,6 +64,20 @@ figure {
     #submit:hover {
         background: var(--primaryColor);
         color: #fff; }
+
+        #reserve-submit {
+          background: transparent;
+          padding: 20px 30px;
+          border: 1px solid grey;
+          color: #fff;
+          border-radius: 20px;
+          text-align: center; 
+          text-decoration: none;
+          transition: .4s;
+       }
+          #reserve-submit:hover {
+              background: #fff;
+              color: var(--primaryColor); }
   
   @media screen and (max-width: 992px) {
       .signup-content {
@@ -76,7 +91,10 @@ figure {
       width: 100%; } }
   @media screen and (max-width: 768px) {
     .register-form {
-      padding: 50px 40px 50px 40px; } }
+      padding: 50px 40px 50px 40px;
+      margin-left: -70px;
+    } 
+    }
   @media screen and (max-width: 575px) {
     .form-row {
       flex-direction: column;

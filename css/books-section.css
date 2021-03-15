@@ -1,10 +1,11 @@
 .book-section{
     min-height: 650px;
     background: #fff;
+    margin-bottom: 50px;
 }
 .book-section-content-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     text-align: center;
 }
 .book-img{
@@ -29,3 +30,4 @@
     margin-bottom: 10px;
     font-weight: bold;
 }
+
